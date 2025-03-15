@@ -1,4 +1,4 @@
-# newportfolio
+# VIJAY RAMESH PORTFOLIO
 
 ## Project setup
 ```
