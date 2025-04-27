@@ -4,7 +4,7 @@
   </div>
 </template>
 <script>
-import SpinnerLotti from "./SpinnerLotti.vue";
+import SpinnerLotti from "../../StaticContent/SpinnerLotti.vue";
 export default {
   data() {
     return {
@@ -18,18 +18,18 @@ export default {
 
     toggleFullscreen() {
 
-      const element = document.documentElement;
+      const element = this.$refs.fullscreenContainer || document.documentElement;
 
       if (element.requestFullscreen) {
         element.requestFullscreen();
-        this.turnOffLotti = false
       } else if (element.webkitRequestFullscreen) {
         element.webkitRequestFullscreen();
-        this.turnOffLotti = false
       } else if (element.msRequestFullscreen) {
         element.msRequestFullscreen();
-        this.turnOffLotti = false
       }
+      this.turnOffLotti = false;
+      console.log("this.turnOffLotti", !this.turnOffLotti);
+      this.$emit("turnOffLotti", !this.turnOffLotti);
 
     },
 

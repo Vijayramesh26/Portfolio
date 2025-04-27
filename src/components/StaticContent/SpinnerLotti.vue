@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-overlay v-show="loading" opacity=".20">
+    <v-overlay v-show="loading" opacity=".10">
       <div style="background-color: transparent; width: 350px;">
 
         <div ref="lottieContainer"></div>
