@@ -7,7 +7,7 @@ export default new Vuex.Store({
   state: {
     profile: {
       Profile: {
-        imageUrl:"./Profile/image.png",
+        imageUrl: "./Profile/image.png",
         resumeURL: "./Profile/VijayRamesh.pdf",
         resumeName: "VijayRamesh.pdf",
         name: "VIJAY RAMESH",
@@ -15,7 +15,8 @@ export default new Vuex.Store({
         hireOption: "Available for Hire",
         github: "https://github.com/vijayramesh26",
         linkedin: "https://www.linkedin.com/in/vijay-ramesh-7ab042212/",
-        content:"Full Stack Developer specializing in building scalable and high-performance web applications. Experienced in both frontend and backend technologies, ensuring seamless integration and optimal user experience."
+        content:
+          "Full Stack Developer specializing in building scalable and high-performance web applications. Experienced in both frontend and backend technologies, ensuring seamless integration and optimal user experience.",
       },
     },
     about: {
@@ -219,12 +220,7 @@ export default new Vuex.Store({
   <li><strong>Mentorship:</strong> Provided mentorship and technical guidance to junior developers, fostering a culture of learning and collaboration within the team.</li>
   <li><strong>Developed Internal Tools:</strong> Built tools for brokerage savings, P&L tracking, pledge management, and real-time trading dashboards, enhancing the decision-making process for internal teams and clients.</li>
 </ol>`,
-          technologies: [ 
-            "Vue.js",
-            "Golang", 
-            "MariaDB",
-            "RESTful APIs",
-          ],
+          technologies: ["Vue.js", "Golang", "MariaDB", "RESTful APIs"],
           icon: "mdi-briefcase-outline",
           color: "teal",
         },
@@ -274,24 +270,26 @@ export default new Vuex.Store({
         },
       ],
     },
-    footer:{
-      socialLinks: [ 
-        { icon: "mdi-linkedin", link: "https://www.linkedin.com/in/vijay-ramesh-7ab042212/" },
+    footer: {
+      socialLinks: [
+        {
+          icon: "mdi-linkedin",
+          link: "https://www.linkedin.com/in/vijay-ramesh-7ab042212/",
+        },
         { icon: "mdi-github", link: "https://github.com/vijayramesh26" },
         { icon: "mdi-twitter", link: "/" },
         { icon: "mdi-youtube", link: "/" },
       ],
     },
-    appbar:{
+    appbar: {
       menu: [
-        { icon: 'mdi-account', title: 'Profile', to: "profileSection" },
-      { icon: 'mdi-information', title: 'About Me', to: "aboutSection" },
-      { icon: 'mdi-folder', title: 'Project', to: "projectSection" },
-      { icon: 'mdi-briefcase', title: 'Experience', to: "experienceSection" },
-      { icon: 'mdi-phone', title: 'Contact Us', to: "contactSection" }
-        ]
-       
-    }
+        { icon: "mdi-account", title: "Profile", to: "profileSection" },
+        { icon: "mdi-information", title: "About Me", to: "aboutSection" },
+        { icon: "mdi-folder", title: "Project", to: "projectSection" },
+        { icon: "mdi-briefcase", title: "Experience", to: "experienceSection" },
+        { icon: "mdi-phone", title: "Contact Us", to: "contactSection" },
+      ],
+    },
   },
   mutations: {},
   actions: {},
