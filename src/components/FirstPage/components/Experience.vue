@@ -20,7 +20,7 @@
       </v-row>
       <v-row class="d-flex justify-center">
         <v-timeline align-top dense >
-          <v-timeline-item small v-for="(experience, i) in experiences" :key="i" :color="experience.color || 'teal'" large>
+          <v-timeline-item small v-for="(experience, i) in experiences" :key="i" :color="experience.color || 'teal'" >
             <template v-slot:icon>
               <v-avatar>
                 <v-icon :color="experience.color || 'teal'">{{ experience.icon }}</v-icon>
