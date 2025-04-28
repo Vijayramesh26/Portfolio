@@ -22,7 +22,7 @@
             <v-row>
                 <v-card class="overflow-x-auto d-flex transparent elevation-0" width="100%" height="100%">
                     <v-col v-for="(project, index) in projects" :key="index" lg="3" md="6" sm="12" cols="12">
-                        <v-card class="d-flex flex-column rounded-lg" height="100%">
+                        <v-card class="d-flex flex-column rounded-xl" color="grey lighten-4" height="100%">
                             <v-img height="200" :src="project.image">
                                 <div style="height: 100%;" class="d-flex align-end justify-center">
                                     <v-btn class="ma-3 white" small outlined :href="project.github">

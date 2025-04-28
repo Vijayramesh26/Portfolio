@@ -27,7 +27,7 @@
               </v-avatar>
             </template>
 
-            <v-card class="elevation-2 rounded-lg">
+            <v-card class="elevation-2 rounded-xl" color="grey lighten-4">
               <v-card-title class="text-h5" v-text="experience.role">
               </v-card-title>
 
