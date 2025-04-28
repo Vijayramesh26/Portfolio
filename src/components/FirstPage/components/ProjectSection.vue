@@ -4,7 +4,7 @@
             <v-row class="d-flex flex-column text-center" no-gutters>
                 <v-col>
                     <span class="text-h3 font-weight-bold" v-text="title">
-                        
+
                     </span>
                 </v-col>
                 <v-col class="d-flex align-center justify-center mt-2 ">
@@ -12,7 +12,7 @@
                 </v-col>
                 <v-col class="my-3 mb-5 d-flex justify-center ">
                     <v-col lg="8" class="">
-                        <span class=" text-subtitle-1 grey--text text--lighten-1 text-center" v-text="header"> 
+                        <span class=" text-subtitle-1 grey--text text--lighten-1 text-center" v-text="header">
                         </span>
                     </v-col>
 
@@ -22,29 +22,38 @@
             <v-row>
                 <v-card class="overflow-x-auto d-flex transparent elevation-0" width="100%" height="100%">
                     <v-col v-for="(project, index) in projects" :key="index" lg="3" md="6" sm="12" cols="12">
-                        <v-card class="d-flex flex-column rounded-xl" color="grey lighten-4" height="100%">
-                            <v-img height="200" :src="project.image">
-                                <div style="height: 100%;" class="d-flex align-end justify-center">
-                                    <v-btn class="ma-3 white" small outlined :href="project.github">
-                                        <v-icon small>mdi-github</v-icon>
-                                        code
-                                    </v-btn>
-                                    <v-btn class="ma-3 teal" small :href="project.demo">
-                                        <v-icon small>mdi-open-in-new</v-icon>
-                                        Demo
-                                    </v-btn>
-                                </div>
-                            </v-img>
+                        <v-hover v-slot="{ hover }">
+                            <v-card class="d-flex flex-column rounded-xl" color="grey lighten-4" height="100%">
+                                <!-- <div class="project-overlay"> -->
+                                <v-img height="200" :src="project.image">
+                                    <v-expand-transition>
+                                        <div v-if="hover"
+                                            class="d-flex transition-fast-in-fast-out teal lighten-5 v-card--reveal text-h2 white--text align-end justify-center"
+                                            style="height: 100%;">
+                                            <v-btn class="ma-3 white" small outlined :href="project.github">
+                                                <v-icon small>mdi-github</v-icon>
+                                                code
+                                            </v-btn>
+                                            <v-btn class="ma-3 teal" small :href="project.demo">
+                                                <v-icon small>mdi-open-in-new</v-icon>
+                                                Demo
+                                            </v-btn>
+                                        </div>
+                                    </v-expand-transition>
 
-                            <v-card-title v-text="project.title"> </v-card-title>
+                                </v-img>
+                                <!-- </div> -->
+                                <v-card-title v-text="project.title"> </v-card-title>
 
-                            <v-card-text v-text="project.description" class="grey--text text--lighten-1"> </v-card-text>
+                                <v-card-text v-text="project.description" class="grey--text text--lighten-1">
+                                </v-card-text>
 
-                            <v-card-text>
-                                <v-chip v-for="(lang, index) in project.language" :key="index"  class="mx-2   "
-                                    v-text="lang"></v-chip>
-                            </v-card-text>
-                        </v-card>
+                                <v-card-text>
+                                    <v-chip v-for="(lang, index) in project.language" :key="index" class="mx-2   "
+                                        v-text="lang"></v-chip>
+                                </v-card-text>
+                            </v-card>
+                        </v-hover>
                     </v-col>
                 </v-card>
             </v-row>
@@ -64,7 +73,7 @@ export default {
     name: "AboutSection",
     data() {
         return {
-            title:this.$store.state.projects.title,
+            title: this.$store.state.projects.title,
             header: this.$store.state.projects.header,
             projects: this.$store.state.projects.Projects,
         }
@@ -85,5 +94,16 @@ export default {
 
 .project-section {
     height: 100%;
+}
+
+.project-overlay {
+    border: 2px solid red;
+    /* top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease; */
 }
 </style>
