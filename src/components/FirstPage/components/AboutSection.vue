@@ -41,7 +41,7 @@
                                     <template v-slot:activator="{ on, attrs }">
                                         <v-card v-bind="attrs" v-on="on"
                                             class="d-flex flex-column align-center justify-center pa-5  service-card rounded-xl elevation-4"
-                                            color="grey lighten-4" min-width="80px" min-height="80px" max-width="80px"
+                                            color="grey lighten-5" min-width="80px" min-height="80px" max-width="80px"
                                             max-height="80px">
                                             <v-img :src="skill.img" width="36" height="36" contain />
                                             <span class="text-caption mt-2 text-center">{{ skill.name }}</span>

@@ -23,7 +23,7 @@
                 <v-card class="overflow-x-auto d-flex transparent elevation-0" width="100%" height="100%">
                     <v-col v-for="(project, index) in projects" :key="index" lg="3" md="6" sm="12" cols="12">
                         <v-hover v-slot="{ hover }">
-                            <v-card class="d-flex flex-column rounded-xl" color="grey lighten-4" height="100%">
+                            <v-card class="d-flex flex-column rounded-xl" color="grey lighten-5" height="100%">
                                 <!-- <div class="project-overlay"> -->
                                 <v-img height="200" :src="project.image">
                                     <v-expand-transition>
