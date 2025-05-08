@@ -1,5 +1,5 @@
 <template>
-    <div class="contact-section">
+    <div class="contact-section app-background ">
         <v-container class="fill-height" :style="{ width: $vuetify.breakpoint.xs ? '90%' : '80%' }">
             <v-row class="d-flex flex-column text-center" no-gutters>
                 <v-col>
@@ -148,9 +148,15 @@ export default {
     height: 35%;
     width: 7%;
     background: linear-gradient(teal, rgb(1, 160, 160));
+
 }
 
 .contact-section {
     height: 100%;
+    background-image: url('../../../assets/bg10.png') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
 }
 </style>

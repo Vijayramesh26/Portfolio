@@ -1,9 +1,8 @@
 <template>
-    <div class="profile-section overflow-x-hidden">
+    <div class="profile-section overflow-x-hidden app-background">
         <v-container fluid class="fill-height ">
             <v-row align="center" justify="center">
-                <v-col cols="12" md="8" class="text-center">
-
+                <v-col cols="12" md="8" class="text-center"> 
 
                     <v-col><v-chip color="teal" outlined v-text="Profile.hireOption">
                         </v-chip></v-col>
@@ -100,5 +99,13 @@ export default {
 
 .SocialIcon {
     z-index: 2 !important;
+}
+.app-background {
+  background-image: url('../../../assets/bg10.png') !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  
 }
 </style>

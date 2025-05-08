@@ -1,5 +1,5 @@
 <template>
-    <div class="project-section py-5" id="projectSection">
+    <div class="project-section py-5 app-background" id="projectSection">
         <v-container class="fill-height" :style="{ width: $vuetify.breakpoint.xs ? '90%' : '80%' }">
             <v-row class="d-flex flex-column text-center" no-gutters>
                 <v-col>
@@ -105,5 +105,13 @@ export default {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
     opacity: 0;
     transition: opacity 0.3s ease; */
+}
+.app-background {
+  background-image: url('../../../assets/bg10.png') !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  
 }
 </style>
