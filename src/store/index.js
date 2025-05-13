@@ -131,6 +131,15 @@ export default new Vuex.Store({
         "Explore my portfolio of full-stack applications built with Vue.js, Nuxt.js, Golang, HTML,CSS, JS and MariDB. Each project demonstrates my approach to solving real-world problems.",
       Projects: [
         {
+          title: "Flight App UI",
+          description:
+            "FLIGHTMS is a fully responsive flight management system built with Vue.js and Vuetify. It features a modern dashboard for managing flights, bookings, schedules, and analytics. The UI includes real-time flight tracking, booking statuses and performance charts — optimized for desktop and mobile views.",
+          image: "/Skills/dummy.png",
+          github: "https://github.com/Vijayramesh26/flightApp",
+          demo: "https://flightapp-by-vijay.web.app/",
+          language: ["Vue.js", "Vuetify"],
+        },
+        {
           title: "Host Vue.js Project on Firebase",
           description:
             "An interactive, animated web tutorial that guides users step-by-step through creating, building, and hosting a Vue.js project on Firebase. Built with pure HTML, CSS, and JavaScript. Clean, responsive, and beginner-friendly.",
