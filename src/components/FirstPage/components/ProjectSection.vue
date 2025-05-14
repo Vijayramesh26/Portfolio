@@ -45,7 +45,12 @@
                                 <!-- </div> -->
                                 <v-card-title v-text="project.title"> </v-card-title>
 
-                                <v-card-text v-text="project.description" class="grey--text text--lighten-1">
+                                <v-card-text class="grey--text text--lighten-1">
+                                    {{ truncatedDescriptions[index] }}
+                                    <span v-if="project.description.length > 50" @click="toggleDescription(index)"
+                                        class="blue--text text--darken-2" style="cursor: pointer;">
+                                        {{ expandedDescriptions[index] ? ' See Less' : ' See More' }}
+                                    </span>
                                 </v-card-text>
 
                                 <v-card-text>
@@ -73,6 +78,7 @@ export default {
     name: "AboutSection",
     data() {
         return {
+            expandedDescriptions: {}, // { 0: true, 1: false, ... }
             title: this.$store.state.projects.title,
             header: this.$store.state.projects.header,
             projects: this.$store.state.projects.Projects,
@@ -81,6 +87,22 @@ export default {
     components: {
         SwipeDown
     },
+    computed: {
+        truncatedDescriptions() {
+            return this.projects.map((project, index) => {
+                const isExpanded = this.expandedDescriptions[index];
+                if (isExpanded || !project.description) return project.description;
+                return project.description.length > 200
+                    ? project.description.slice(0, 200) + '...'
+                    : project.description;
+            });
+        }
+    },
+    methods: {
+        toggleDescription(index) {
+            this.$set(this.expandedDescriptions, index, !this.expandedDescriptions[index]);
+        }
+    }
 
 
 }
@@ -106,12 +128,13 @@ export default {
     opacity: 0;
     transition: opacity 0.3s ease; */
 }
+
 .app-background {
-  background-image: url('../../../assets/bg10.png') !important;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  
+    background-image: url('../../../assets/bg10.png') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+
 }
 </style>

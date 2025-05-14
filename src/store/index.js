@@ -134,7 +134,7 @@ export default new Vuex.Store({
           title: "Flight App UI",
           description:
             "FLIGHTMS is a fully responsive flight management system built with Vue.js and Vuetify. It features a modern dashboard for managing flights, bookings, schedules, and analytics. The UI includes real-time flight tracking, booking statuses and performance charts — optimized for desktop and mobile views.",
-          image: "/Skills/dummy.png",
+          image: "/Projects/flight.png",
           github: "https://github.com/Vijayramesh26/flightApp",
           demo: "https://flightapp-by-vijay.web.app/",
           language: ["Vue.js", "Vuetify"],
@@ -143,7 +143,7 @@ export default new Vuex.Store({
           title: "Host Vue.js Project on Firebase",
           description:
             "An interactive, animated web tutorial that guides users step-by-step through creating, building, and hosting a Vue.js project on Firebase. Built with pure HTML, CSS, and JavaScript. Clean, responsive, and beginner-friendly.",
-          image: "/Skills/dummy.png",
+          image: "/Projects/firebase.png",
           github: "https://github.com/Vijayramesh26/vuehosting",
           demo: "https://vijayramesh26.github.io/vuehosting/",
           language: ["HTML", "CSS", "Javascript"],
@@ -152,7 +152,7 @@ export default new Vuex.Store({
           title: "PORTFOLIO",
           description:
             "A customizable, interactive portfolio template built with Vue.js, Vuetify. Lightweight, animated, and easy to personalize for showcasing your skills and projects. Clean, modern, and developer-friendly.With simple edits in index.js (store) like content, anyone can easily personalize this design to showcase their work, skills, and projects.",
-          image: "/Skills/dummy.png",
+          image: "/Projects/portfolio.png",
           github: "https://github.com/Vijayramesh26/portfolio",
           demo: "https://vijayramesh-portfolio.web.app/",
           language: ["Vue.js", "Vuetify"],
@@ -160,7 +160,7 @@ export default new Vuex.Store({
         {
           title: "IFSC LOCATOR",
           description: `IFSC Locator is a simple and powerful tool where you can paste any IFSC code and instantly retrieve complete bank details — including the Bank Name, Branch, Address, State, Contact, City, District, MICR Code, and transaction facilities like IMPS, NEFT, RTGS, SWIFT, and UPI availability.Designed for speed and accuracy.`,
-          image: "/Skills/dummy.png",
+          image: "/Projects/ifsc.png",
           github: "",
           demo: "https://ifsc-locator-by-vijay.web.app/#/",
           language: ["Vue.js", "Vuetify"],
@@ -169,7 +169,7 @@ export default new Vuex.Store({
           title: "MEDAPP",
           description:
             "MedApp is a simplified medical billing software prototype designed for hospitals and clinics. It features four main roles: Biller (handles patient billing), Manager (oversees operations and reporting), System Admin (manages users and settings), and Inventory (tracks medical supplies). Ideal for healthcare startups, it streamlines billing and inventory management",
-          image: "/Skills/dummy.png",
+          image: "/Projects/medApp.png",
           github: "",
           demo: "https://medapp-by-vijay.web.app",
           language: ["Vue.js", "Vuetify"],
@@ -178,7 +178,7 @@ export default new Vuex.Store({
           title: "SPOTIFY",
           description:
             "Spotify Sign-Up Page Clone is a responsive and visually accurate replica of Spotify's official sign-up page, built purely with HTML and CSS.It recreates the original layout, styling, and user interface design — including responsive elements, form fields, and buttons — to deliver a smooth user experience across devices.",
-          image: "/Skills/dummy.png",
+          image: "/Projects/spotify.png",
           github: "https://github.com/Vijayramesh26/spotify",
           demo: "https://vijayramesh26.github.io/spotify/",
           language: ["HTML", "CSS"],
@@ -187,7 +187,7 @@ export default new Vuex.Store({
           title: "INSTAGRAM & FACEBOOK CLONE",
           description:
             "A simple website featuring responsive clones of Instagram and Facebook sign-up and login pages, built with pure HTML and CSS. No JavaScript or frameworks are used, focusing on front-end design and responsiveness",
-          image: "/Skills/dummy.png",
+          image: "/Projects/instagram.png",
           github: "https://github.com/Vijayramesh26/Facebook",
           demo: "https://vijayramesh26.github.io/Facebook/",
           language: ["HTML", "CSS"],
