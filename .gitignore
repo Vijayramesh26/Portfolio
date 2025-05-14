@@ -1,1 +1,11 @@
 node_modules
+dist
+
+# Ignore build output
+dist/
+*.log
+
+# Firebase related files
+.firebase/
+.firebase-tools.json
+.firebaserc
