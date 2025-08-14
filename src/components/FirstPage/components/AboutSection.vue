@@ -39,9 +39,9 @@
                             <v-col v-for="(skill, index) in Skills" :key="index" cols="4" lg="3">
                                 <v-tooltip right>
                                     <template v-slot:activator="{ on, attrs }">
-                                        <v-card v-bind="attrs" v-on="on"
-                                            class="d-flex flex-column align-center justify-center pa-5  service-card rounded-xl elevation-4"
-                                            color="grey lighten-5" min-width="80px" min-height="80px" max-width="80px"
+                                        <v-card v-bind="attrs" v-on="on" outlined
+                                            class="d-flex flex-column align-center justify-center pa-5   service-card rounded-xl "
+                                             min-width="80px" min-height="80px" max-width="80px"
                                             max-height="80px">
                                             <v-img :src="skill.img" width="36" height="36" contain />
                                             <span class="text-caption mt-2 text-center">{{ skill.name }}</span>
@@ -64,18 +64,18 @@
                 <v-card outlined class="pa-2 " width="100%" height="100%" min-height="280px" color="transparent">
                     <v-row class="d-flex flex-row">
                         <v-col lg="3" md="6" sm="12" cols="12" v-for="(service, index) in Job" :key="index">
-                            <v-card outlined width="100%" height="100%" min-height="280px" elevation="3"
-                                class="rounded-xl" color="grey lighten-5">
+                            <v-card outlined width="100%" height="100%" min-height="280px" 
+                                class="rounded-xl" >
                                 <v-card-text>
                                     <div class="d-flex align-start">
                                         <v-avatar>
                                             <v-icon class="mt-2 d-flex align-start" :color="service.color">{{
                                                 service.icon
-                                                }}</v-icon>
+                                            }}</v-icon>
                                         </v-avatar>
                                         <div>
                                             <span class="text-h6 font-weight-bold " color="black">{{ service.title
-                                            }}</span>
+                                                }}</span>
                                             <p class="grey--text" v-text="typedDescriptions[index]"></p>
                                         </div>
                                     </div>
@@ -110,7 +110,7 @@ export default {
             typeInterval: null,
             typeIndex: 0,
             typedDescriptions: [], // Array to store the typed text per job
-            typeIntervals: [], 
+            typeIntervals: [],
 
 
 
@@ -170,6 +170,7 @@ export default {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
     background-color: rgba(38, 166, 154, 0.1) !important;
+    transition: all 0.3s ease-in-out;
 }
 </style>
 

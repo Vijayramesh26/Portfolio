@@ -18,24 +18,31 @@
 
         </v-col>
       </v-row>
-      <v-row class="d-flex justify-center">
-        <v-timeline align-top dense >
-          <v-timeline-item small v-for="(experience, i) in experiences" :key="i" :color="experience.color || 'teal'" >
-            <template v-slot:icon>
+      <v-row class="d-flex justify-center" no-gutters>
+        <v-timeline :align-top="$vuetify.breakpoint.xs" :dense="$vuetify.breakpoint.xs">
+          <v-timeline-item small v-for="(experience, i) in experiences" :key="i" :color="experience.color || 'teal'"
+            class="ml-n12 ml-sm-0">
+            <!-- <template v-slot:icon>
               <v-avatar>
-                <v-icon :color="experience.color || 'teal'" small>{{ experience.icon }}</v-icon >
+                <v-icon :color="experience.color || 'teal'" small>{{ experience.icon }}</v-icon>
               </v-avatar>
+            </template> -->
+
+            <template v-slot:opposite>
+              <!-- <span v-text="experience.period"></span> -->
+              <v-chip outlined color="teal" v-text="experience.period"></v-chip>
             </template>
 
-            <v-card class="elevation-2 rounded-xl" color="grey lighten-5">
-              <v-card-title class="text-h5" v-text="experience.role">
+            <v-card class="elevation-1 rounded-xl" outlined color="grey lighten-5">
+              <v-card-title class="text-md-h6 text-subtitle-1 font-weight-bold" v-text="experience.role">
               </v-card-title>
 
               <v-card-subtitle>
-                <div class="d-flex align-center">
+                <div class="mt-1">
                   <span class="teal--text font-weight-medium" v-text="experience.company"></span>
                   <v-spacer></v-spacer>
-                  <v-chip small outlined color="teal" v-text="experience.period"></v-chip>
+                  <v-chip class="mt-1" small outlined color="teal" v-text="experience.period"
+                    v-if="$vuetify.breakpoint.xs"></v-chip>
                 </div>
               </v-card-subtitle>
 
@@ -43,7 +50,8 @@
                 <p class="mb-4" v-html="experience.description"></p>
 
                 <div>
-                  <v-chip v-for="tech in experience.technologies" :key="tech" small class="mr-2 mb-2 " v-text="tech">
+                  <v-chip v-for="tech in experience.technologies" :key="tech" small class="mr-2 mb-2 " outlined
+                    color="teal" v-text="tech">
                   </v-chip>
                 </div>
               </v-card-text>
@@ -89,5 +97,23 @@ export default {
 
 .project-section {
   height: 100%;
+}
+
+@media (max-width: 600px) {
+
+  /* Remove padding on the whole timeline container */
+  .v-timeline {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+
+
+  /* Adjust the connector line */
+  .v-timeline::before {
+    left: 0 !important;
+    /* align to the very edge if needed */
+    margin: 0 !important;
+  }
 }
 </style>

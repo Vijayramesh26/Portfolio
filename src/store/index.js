@@ -92,7 +92,7 @@ export default new Vuex.Store({
         {
           name: "Firebase",
           img: "/Skills/firebase.png",
-          exp: "Advanced",
+          exp: "Intermediate",
         },
       ],
       jobContent: `<ul style=" list-style: none; line-height:35px;display: flex;flex-direction: column; gap: 20px;">  <li> 🚀 Hey there! I'm a Full Stack Web Developer passionate about crafting dynamic, user-friendly, and high-performance web applications. From sleek frontend experiences to rock-solid backend systems, I love turning ideas into reality.</li>
@@ -284,11 +284,26 @@ export default new Vuex.Store({
         {
           icon: "mdi-linkedin",
           link: "https://www.linkedin.com/in/vijay-ramesh-7ab042212/",
+          color: "blue darken-1",
         },
-        { icon: "mdi-github", link: "https://github.com/vijayramesh26" },
-        { icon: "mdi-twitter", link: "/" },
-        { icon: "mdi-youtube", link: "/" },
+        {
+          icon: "mdi-github",
+          link: "https://github.com/vijayramesh26",
+          color: "black",
+        },
+        { icon: "mdi-twitter", link: "/", color: "blue lighten-1" },
+        {
+          icon: "mdi-gmail",
+          link: "mailto:vijayramesh26301@gmail.com",
+          color: "red lighten-1",
+        },
+        {
+          icon: "mdi-phone",
+          link: "tel:+917092755010",
+          color: "green lighten-1",
+        },
       ],
+      portfolioLink: "https://rameshvijay-portfolio.web.app/",
     },
     appbar: {
       menu: [

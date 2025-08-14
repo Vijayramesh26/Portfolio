@@ -23,18 +23,19 @@
                 <v-card class="overflow-x-auto d-flex transparent elevation-0" width="100%" height="100%">
                     <v-col v-for="(project, index) in projects" :key="index" lg="3" md="6" sm="12" cols="12">
                         <v-hover v-slot="{ hover }">
-                            <v-card class="d-flex flex-column rounded-xl" color="grey lighten-5" height="100%">
+                            <v-card class="d-flex flex-column rounded-xl service-card elevation-0 pa-2" outlined
+                                height="100%">
                                 <!-- <div class="project-overlay"> -->
                                 <v-img height="200" :src="project.image">
                                     <v-expand-transition>
                                         <div v-if="hover"
                                             class="d-flex transition-fast-in-fast-out teal lighten-5 v-card--reveal text-h2 white--text align-end justify-center"
                                             style="height: 100%;">
-                                            <v-btn class="ma-3 white" small outlined :href="project.github">
+                                            <v-btn class="ma-3 white" small outlined :href="project.github" target="_blank">
                                                 <v-icon small>mdi-github</v-icon>
                                                 code
                                             </v-btn>
-                                            <v-btn class="ma-3 teal" small :href="project.demo">
+                                            <v-btn class="ma-3 teal" small :href="project.demo" target="_blank">
                                                 <v-icon small>mdi-open-in-new</v-icon>
                                                 Demo
                                             </v-btn>
@@ -136,5 +137,12 @@ export default {
     background-position: center;
     min-height: 100vh;
 
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+
+    transition: all 0.3s ease-in-out;
 }
 </style>

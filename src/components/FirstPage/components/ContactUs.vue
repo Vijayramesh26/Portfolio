@@ -1,5 +1,5 @@
 <template>
-    <div class="contact-section app-background ">
+    <div class="contact-section  ">
         <v-container class="fill-height" :style="{ width: $vuetify.breakpoint.xs ? '90%' : '80%' }">
             <v-row class="d-flex flex-column text-center" no-gutters>
                 <v-col>
@@ -22,7 +22,7 @@
             <v-row>
 
 
-                <v-col cols="12" md="4">
+                <!-- <v-col cols="12" md="4">
 
                     <div class="text-h4 font-weight-bold  pb-3">Contact Information</div>
                     <v-card elevation="4" class="pa-2 rounded-xl" color="grey lighten-5">
@@ -55,9 +55,9 @@
                     </v-card>
 
 
-                </v-col>
-                <v-col justify="center" class="d-flex justify-end">
-                    <v-card class="rounded-xl pa-10 " color="grey lighten-5" max-width="700px" elevation="4">
+                </v-col> -->
+                <v-col justify="center" class="d-flex justify-center">
+                    <v-card class="rounded-xl pa-10 " color="grey lighten-5" max-width="700px" outlined>
                         <div class="text-h5 font-weight-bold  pb-6 ">Send Me a Message</div>
 
                         <v-row cols="12">
