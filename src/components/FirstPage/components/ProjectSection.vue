@@ -32,11 +32,11 @@
                                             class="d-flex transition-fast-in-fast-out teal lighten-5 v-card--reveal text-h2 white--text align-end justify-center"
                                             style="height: 100%;">
                                             <v-btn class="ma-3 white" small outlined :href="project.github" target="_blank">
-                                                <v-icon small>mdi-github</v-icon>
+                                                <v-icon small class="mr-1" >mdi-github</v-icon>
                                                 code
                                             </v-btn>
-                                            <v-btn class="ma-3 teal" small :href="project.demo" target="_blank">
-                                                <v-icon small>mdi-open-in-new</v-icon>
+                                            <v-btn class="ma-3 teal white--text" small :href="project.demo" target="_blank">
+                                                <v-icon small class="mr-1" >mdi-open-in-new</v-icon>
                                                 Demo
                                             </v-btn>
                                         </div>
@@ -55,7 +55,7 @@
                                 </v-card-text>
 
                                 <v-card-text>
-                                    <v-chip v-for="(lang, index) in project.language" :key="index" class="mx-2   "
+                                    <v-chip v-for="(lang, index) in project.language" :key="index" class="mx-2 " small outlined color="teal"
                                         v-text="lang"></v-chip>
                                 </v-card-text>
                             </v-card>

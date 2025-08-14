@@ -131,6 +131,15 @@ export default new Vuex.Store({
         "Explore my portfolio of full-stack applications built with Vue.js, Nuxt.js, Golang, HTML,CSS, JS and MariDB. Each project demonstrates my approach to solving real-world problems.",
       Projects: [
         {
+          title: "Chat.ai",
+          description:
+            "Chat.ai is a modern, responsive chat application built with Vue.js and Vuetify. It features real-time messaging, user authentication, and a sleek, intuitive interface. The app is designed for both desktop and mobile devices, providing a seamless user experience across platforms.",
+          image: "/Projects/chatAi.png",
+          github: "https://github.com/Vijayramesh26/chat.ai",
+          demo: "https://chat-ai-by-vijay.web.app/",
+          language: ["Vue.js", "Vuetify", "Gemini AI"],
+        },
+        {
           title: "Flight App UI",
           description:
             "FLIGHTMS is a fully responsive flight management system built with Vue.js and Vuetify. It features a modern dashboard for managing flights, bookings, schedules, and analytics. The UI includes real-time flight tracking, booking statuses and performance charts — optimized for desktop and mobile views.",
@@ -139,15 +148,7 @@ export default new Vuex.Store({
           demo: "https://flightapp-by-vijay.web.app/",
           language: ["Vue.js", "Vuetify"],
         },
-        {
-          title: "Host Vue.js Project on Firebase",
-          description:
-            "An interactive, animated web tutorial that guides users step-by-step through creating, building, and hosting a Vue.js project on Firebase. Built with pure HTML, CSS, and JavaScript. Clean, responsive, and beginner-friendly.",
-          image: "/Projects/firebase.png",
-          github: "https://github.com/Vijayramesh26/vuehosting",
-          demo: "https://vijayramesh26.github.io/vuehosting/",
-          language: ["HTML", "CSS", "Javascript"],
-        },
+ 
         {
           title: "PORTFOLIO",
           description:
@@ -173,6 +174,15 @@ export default new Vuex.Store({
           github: "",
           demo: "https://medapp-by-vijay.web.app",
           language: ["Vue.js", "Vuetify"],
+        },
+               {
+          title: "Host Vue.js Project on Firebase",
+          description:
+            "An interactive, animated web tutorial that guides users step-by-step through creating, building, and hosting a Vue.js project on Firebase. Built with pure HTML, CSS, and JavaScript. Clean, responsive, and beginner-friendly.",
+          image: "/Projects/firebase.png",
+          github: "https://github.com/Vijayramesh26/vuehosting",
+          demo: "https://vijayramesh26.github.io/vuehosting/",
+          language: ["HTML", "CSS", "Javascript"],
         },
         {
           title: "SPOTIFY",
