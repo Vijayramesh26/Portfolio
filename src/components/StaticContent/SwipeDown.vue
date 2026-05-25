@@ -1,14 +1,9 @@
 <template>
-  <v-container align="center" justify="center" v-show="loading"  class="transparent">
-    <!-- <v-sheet > -->
-      <div style=" width: 50px;" >
-
-        <div ref="SwipeDownContainer"></div> 
-      </div>
-    <!-- </v-sheet> -->
-  </v-container>
-
-
+  <div v-show="loading" class="d-flex justify-center transparent py-4">
+    <div style="width: 50px;">
+      <div ref="SwipeDownContainer"></div>
+    </div>
+  </div>
 </template>
 
 
